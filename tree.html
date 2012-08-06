@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Tree</title>
+        <link rel="stylesheet" href="tree.css" type="text/css"/>
+        <style type="text/css">
+            * {margin:0;padding:0;}
+            body{padding:10px;}
+            h1{font-size:22px;margin:15px 0 5px;}
+            h2{font-size:20px;margin:13px 0 5px;}
+            h3{font-size:18px;margin:11px 0 5px;}
+            h4{font-size:16px;margin:9px 0 5px;}
+            h5{font-size:14px;margin:7px 0 5px;}
+            h6{font-size:12px;margin:5px 0 5px;}
+            p,.line{display:block;padding:5px;}
+            p{line-height:150%;}
+            button{padding:3px;margin:5px;}
+
+        </style>
+    </head>
+    <body>
+        <p>
+            <a href="javascript:GnimTree.openTree('#mytree');">全部展开</a>
+            <a href="javascript:GnimTree.closeTree('#mytree');">全部闭合</a>
+        </p>
+        <div id="mytree">
+            <div class="tree">
+                <div class="tree-title"><i class="tree-i tree-i2"></i>节点1</div>
+                <div class="tree-content">
+                    <div class="tree">
+                        <div class="tree-title"><i class="tree-i tree-i2"></i>节点1-1</div>
+                        <div class="tree-content">
+                            <div class="tree">
+                                <div class="tree-title"><i class="tree-i tree-i2"></i>节点1-1-1</div>
+                                <div class="tree-content">
+                                    <div class="tree-leaf"><i class="tree-i tree-i3"></i>叶节点1-1-1-1</div>
+                                    <div class="tree-leaf"><i class="tree-i tree-i3"></i>叶节点1-1-1-2</div>
+                                    <div class="tree-leaf"><i class="tree-i tree-i3"></i>叶节点1-1-1-3</div>
+                                </div>
+                            </div>
+                            <div class="tree">
+                                <div class="tree-title"><i class="tree-i tree-i2"></i>节点1-1-2</div>
+                                <div class="tree-content">
+                                    <div class="tree-load"><div class="icon-connect"></div> 正在加载...</div>
+                                </div>
+                            </div>
+                            <div class="tree">
+                                <div class="tree-title"><i class="tree-i tree-i1"></i>节点1-1-3</div>
+                            </div>
+                            <div class="tree">
+                                <div class="tree-title"><i class="tree-i tree-i1"></i>节点1-1-4</div>
+                                <div class="tree-content tree-content-hide">
+                                    <div class="tree-leaf"><i class="tree-i tree-i3"></i>叶节点1-1-1-1</div>
+                                    <div class="tree-leaf"><i class="tree-i tree-i3"></i>叶节点1-1-1-2</div>
+                                    <div class="tree-leaf"><i class="tree-i tree-i3"></i>叶节点1-1-1-3</div>
+                                </div>
+                            </div>
+                            <div class="tree">
+                                <div class="tree-title"><i class="tree-i tree-i1"></i>节点1-1-5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tree">
+                        <div class="tree-title"><i class="tree-i tree-i2"></i>节点1-2</div>
+                        <div class="tree-content">
+                            <div class="tree-leaf"><i class="tree-i tree-i3"></i>叶节点1-2-1</div>
+                            <div class="tree-leaf"><i class="tree-i tree-i3"></i>叶节点1-2-2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tree">
+                <div class="tree-title"><i class="tree-i tree-i2"></i>节点2</div>
+                <div class="tree-content">
+                    <div class="tree-leaf"><i class="tree-i tree-i3"></i>叶节点2-1</div>
+                    <div class="tree-leaf"><i class="tree-i tree-i3"></i>叶节点2-2</div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://raw.github.com/RockMing/GnimJS/master/full/gnim.js"></script>
+        <script type="text/javascript" src="tree.js"></script>
+    </body>
+</html>
